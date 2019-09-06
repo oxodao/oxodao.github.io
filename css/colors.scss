@@ -1,0 +1,31 @@
+@import "vars.scss";
+
+/** This largely comes from Robb0wen's Synthwave-vscode that I really really like (Even a bit too much I think) **/
+/** https://github.com/robb0wen/synthwave-vscode **/
+
+@mixin color-green {
+    color: $bright_green;
+    text-shadow: 0 0 2px #100c0f, 0 0 5px #257c5575, 0 0 25px #21272475;
+}
+
+@mixin color-yellow {
+    color: $whiteish;
+    text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+}
+
+@mixin color-blue {
+    color: #fdfdfd;
+    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+}
+
+.green {
+    @include color-green;
+}
+
+.yellow {
+    @include color-yellow;
+}
+
+.blue {
+    @include color-blue;
+}

@@ -1,0 +1,269 @@
+@import "vars.scss";
+@import "colors.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    background: $bg_soft;
+    color: $similiwhite;
+    font-family: Arial;
+}
+
+header {
+    display: none;
+    h1 { background: inherit; }
+}
+
+
+@media (max-width: $xs-detector) {
+    header {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-around;
+        background: $bg_darker;
+
+        top: 0;
+        left: 0;
+        height: $heightHeader;
+
+        z-index: 999;
+
+        button, h1 {
+            margin: 10px;
+        }
+
+        h1 {
+            padding: 0;
+        }
+    }
+
+    .hamburger-inner {
+        &, &:before, &:after {
+            background-color: $whiteish !important;
+            box-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+        }
+    }
+}
+
+a {
+    @include color-green;
+}
+
+h1, h2, h3, h4 {
+    @include color-yellow;
+    margin: 0;
+    padding: 15px;
+    background: $bg_dark;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: $leftMenuWidth;
+
+    box-shadow: 2px 0 3px #171520;
+
+    @media (max-width: $s-detector){
+        width: $leftMenuWidth-s;
+        padding: $paddingMenu-s;
+    }
+
+    @media (max-width: $xs-detector) {
+        width: 100vw;
+        padding: $paddingMenu;
+        padding-top: $heightHeader + 20px;
+        left: -100vw;
+        box-shadow: none;
+    }
+
+    transition: left 1s ease;
+
+    padding: $paddingMenu;
+
+    background: $bg_darker;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        flex: 1 1 0;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            height: 40px;
+            background: $bg_dark;
+
+            &:hover {
+                background: $bg_soft;
+            }
+        }
+    }
+
+    div {
+        margin: 5px;
+    }
+
+    #social {
+        display: flex;
+        justify-content: space-around;
+        img {
+            width: 32px;
+        }
+    }
+}
+
+.opened {
+    left: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-left: $leftMenuWidth;
+
+    @media (max-width: $s-detector){
+        margin-left: $leftMenuWidth-s;
+    }
+
+    @media (max-width: $xs-detector) {
+        margin-left: 0; 
+    }
+}
+
+#about {
+    @media (max-width: $xs-detector) {
+        margin-top: $heightHeader;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    #presentation {
+        width: 500px;
+        text-align: justify;
+        padding: 40px;
+    }
+}
+
+#projects {
+    #pro, #perso, #drx, #divers {
+        width: 100%;
+
+        &>p {
+            text-align: center;
+        }
+
+    }
+
+    article {
+        width: 90%;
+
+        @media(min-width: $xs-detector) {
+            height: 200px;
+        }
+
+        @media(min-width: 1300px) {
+            height: 300px;
+        }
+        margin: 20px auto 20px auto;
+
+        display: flex;
+
+        @media (max-width: $xs-detector) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        background: $bg_dark;
+        border: 1px solid $bg_darker;
+        border-radius: 2px;
+        box-shadow: 0 0 5px #171520;
+
+        .img {
+            @media(max-width: $xs-detector) {
+                width: 80%;
+            }
+
+            img {
+                width: 100%;
+                height: 200px;
+
+                @media(min-width: $xs-detector) {
+                    width: 250px;
+                    height: 100%;
+                }
+
+                @media(min-width: 1300px) {
+                    width: 500px;
+                    height: 298px;
+                }
+
+
+
+                object-fit: cover;
+            }
+        }
+
+        .prj-col {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+
+            .project-content {
+                flex: 1 0 auto;
+                p {
+                    margin: auto;
+                    width: 95%;
+                }
+            }
+
+            .project-links {
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 20px;
+
+                .bouton {
+                    display: block;
+                    background: $bg_darker;
+                    padding: 10px;
+                    min-width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 25px;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    margin-right: 10px;
+
+                    &:hover {
+                        background: $bg_soft;
+                    }
+                }
+            }
+        }
+    }
+
+}
