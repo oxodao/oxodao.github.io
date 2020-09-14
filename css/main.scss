@@ -204,7 +204,8 @@ section {
 
         .img {
             @media(max-width: $xs-detector) {
-                width: 80%;
+                //width: 80%;
+                flex: 1;
             }
 
             img {

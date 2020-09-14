@@ -260,7 +260,8 @@ section {
 }
 
 #projects article .img {
-    width: 80%;
+    /*width: 80%;*/
+    flex: 1;
 }
 
 #projects article .img img {
