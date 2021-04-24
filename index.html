@@ -12,6 +12,18 @@
 </head>
 <body>
 
+    <!--
+
+
+        Please don't look at this too much.
+        This is a quick & dirty old code I made
+        This will be fully rewritten with a new design
+        When I'll have free time
+        (i.e. After I end school)
+
+
+    -->
+
     <header>
         <button class="hamburger hamburger--squeeze" type="button">
             <span class="hamburger-box">
@@ -36,9 +48,9 @@
         <div class="blue">
             <p>Contact: <a href="mailto:nathan@janczewski.fr">nathan@janczewski.fr</a></p>
             <div id="social">
-                <a href="https://github.com/oxodao"><img src="img/github.png" /></a>
-                <a href="https://twitter.com/oxodao"><img src="img/twitter.png" /></a>
-                <a href="https://linkedin.com/"><img src="img/linkedin.png" /></a>
+                <a href="https://github.com/oxodao" target="_blank"><img src="img/github.png" /></a>
+                <a href="https://twitter.com/oxodao" target="_blank"><img src="img/twitter.png" /></a>
+                <a href="https://www.linkedin.com/in/nathan-janczewski-5736b2131/" target="_blank"><img src="img/linkedin.png" /></a>
             </div>
         </div>
     </nav>
@@ -47,9 +59,9 @@
         <!-- Main section -->
         <h1><span class="blue">Nathan &lt;<span class="green">Oxodao</span>&gt; JANCZEWSKI</span></h1>
         <div id="presentation">
-            <p>22 ans, <span class="blue">curieux</span> et <span class="blue">passioné de développement</span>, je passe beaucoup de mon temps libre à "bidouiller" et travailler sur mes projets persos.</p>
+            <p>23 ans, <span class="blue">curieux</span> et <span class="blue">passioné de développement</span>, je passe beaucoup de mon temps libre à "bidouiller" et travailler sur mes projets persos.</p>
             <p>Après un <span class="blue">baccalauréat scientifique</span>, j'ai obtenu mon <span class="blue">DUT Informatique</span> à l'IUT de Reims. Depuis, je suis en alternance en école d'ingénieur au <span class="blue">CNAM</span>.</p>
-            <p>D'ailleurs cette alternance est aussi effectué au <span class="blue">CNAM</span>, au service <span class="blue">Lab's DN</span>.</p>
+            <p>J'effectue mon alternance chez <a class="blue" href="https://un-zero-un.fr/" target="_blank">Un-zéro-un</a>, une agence de communication située à Charleville-Mézières</p>
         </div>
     </section>
 
@@ -61,11 +73,26 @@
                 <!-- Can't get GRIDS TO WORK >:( -->
                 <!-- @TODO: Fix responsive between 700px & 1100px -->
                 <article>
+                    <div class="img"><img src="img/projects/dc/banner.png" /></div>
+                    <div class="prj-col">
+                        <div class="project-content">
+                            <h1>Deal & Co</h1>
+                            <p>Durant mon alternance, j'ai travaillé sur l'API de notre client Deal & Co</p>
+                            <p>Cette application mobile permet de trouver des réductions, cadeaux, ... chez les partenaires autour de vous.</p>
+                        </div>
+                        <div class="project-links">
+                            <a class="bouton" href="https://www.deal-and-co.com" target="_blank">Site web</a>
+                            <a class="bouton" href="https://play.google.com/store/apps/details?id=com.deal_and_co.app" target="_blank">Play Store</a>
+                            <a class="bouton" href="https://apps.apple.com/fr/app/deal-co/id1559608376" target="_blank">Apple Store</a>
+                        </div>
+                    </div>
+                </article>
+                <article>
                     <div class="img"><img src="img/projects/gescicca/banner.png" /></div>
                     <div class="prj-col">
                         <div class="project-content">
                             <h1>Gescicc@</h1>
-                            <p>Développé par le <span class="blue">Lab'S DN</span> au <a href="http://www.cnam.fr" class="blue">CNAM</a>, Gescicc@ est le logiciel de gestion de scolarité auquel je participe durant mon alternance.</p>
+                            <p>Développé par le <span class="blue">Lab'S DN</span> au <a href="http://www.cnam.fr" class="blue" target="_blank">CNAM</a>, Gescicc@ est le logiciel de gestion de scolarité auquel j'ai participé durant mes deux premières années d'alternance.</p>
                             <p>Il permet une gestion exaustive des besoins d'un centre et est utilisé par la plus grande majorité des centres CNAM dans le monde.</p>
                         </div>
                         <div class="project-links">
@@ -78,24 +105,11 @@
                     <div class="prj-col">
                         <div class="project-content">
                             <h1>Coté-Meuse</h1>
-                            <p>Après mon stage, je suis resté un mois chez <a class="blue" href="https://un-zero-un.fr/">Un-zéro-un</a>. J'ai eu l'occasion de travailler entre autre sur le marketplace Coté-Meuse</p>
+                            <p>Après mon stage, je suis resté un mois chez <a class="blue" href="https://un-zero-un.fr/" target="_blank">Un-zéro-un</a>. J'ai eu l'occasion de travailler entre autre sur le marketplace Coté-Meuse</p>
                             <p>J'ai ajouté certaines fonctionnalités au panel administrateur / marchand.</p>
                         </div>
                         <div class="project-links">
-                            <a class="bouton" href="https://cote-meuse.fr/">Site web</a>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="img"><img src="img/projects/veilleur/banner.png" /></div>
-                    <div class="prj-col">
-                        <div class="project-content">
-                            <h1>Veilleur</h1>
-                            <p>Durant mon stage chez <a class="blue" href="https://un-zero-un.fr/">Un-zéro-un</a>, j'ai été chargé de continuer leurs développement d'une application de veille technologique.</p>
-                            <p>Développée en React et API-Platform, cette application permet de stocker une liste de liens et les trier par tags. Authentification géré par JWT et OAuth via Google.</p>
-                        </div>
-                        <div class="project-links">
-                            <a class="bouton" href="https://github.com/oxodao/veilleur">Github</a>
+                            <a class="bouton" href="https://cote-meuse.fr/" target="_blank">Site web</a>
                         </div>
                     </div>
                 </article>
@@ -103,6 +117,24 @@
         <div id="perso">
             <h1>Projets personnels</h1>
             <p>Voici la liste des projets que j'ai effectué sur mon temps libre.</p>
+            <article>
+                <div class="img"><img src="img/projects/scinna/banner.webp" /></div>
+                <div class="prj-col">
+                    <div class="project-content">
+                        <h1>Scinna</h1>
+                        <p>Scinna est un logiciel permettant de partager ses captures d'écrans</p>
+                        <br />
+                        <p>Le but de cette application est de pouvoir l'héberger soi-même simplement tout en ayant des fonctionnaités complètes et utiles.</p>
+                        <p>Scinna fait parti d'un groupement d'applications: Scinna (Le serveur), Scinnapse (L'application bureau), Scinnamon (L'application mobile) et CLIent (Le client terminal).</p>
+                        <br />
+                        <p>Développé en Golang et React, il s'agit de mon plus gros projet personnel à ce jour.</p>
+                    </div>
+                    <div class="project-links">
+                        <a class="bouton" href="https://scinna.app" target="_blank">Site web</a>
+                        <a class="bouton" href="https://github.com/scinna/server" target="_blank">Github</a>
+                    </div>
+                </div>
+            </article>
             <article>
                 <div class="img"><img src="img/projects/cao/banner.png" /></div>
                 <div class="prj-col">
@@ -128,8 +160,8 @@
                         <p>Créé pour la chaine de JosetteLaChèvre, son utilisation sera étendue à d'autres une fois jugé stable.</p>
                     </div>
                     <div class="project-links">
-                        <a class="bouton" href="https://www.twitch.tv/josettelachevre">Twitch JosetteLaChèvre</a>
-                        <a class="bouton" href="https://github.com/oxodao/TPBT">Github</a>
+                        <a class="bouton" href="https://www.twitch.tv/josettelachevre" target="_blank">Twitch JosetteLaChèvre</a>
+                        <a class="bouton" href="https://github.com/oxodao/TPBT" target="_blank">Github</a>
                     </div>
                 </div>
             </article>
@@ -141,7 +173,7 @@
                         <p>Jeu de quizz sur ses amis, clone opensource de The Test (en pause)</p>
                     </div>
                     <div class="project-links">
-                        <a class="bouton" href="https://github.com/oxodao/friendquest">Github</a>
+                        <a class="bouton" href="https://github.com/oxodao/friendquest" target="_blank">Github</a>
                     </div>
                 </div>
             </article>
@@ -165,12 +197,12 @@
                 <div class="prj-col">
                     <div class="project-content">
                         <h1>YoutubeClock</h1>
-                        <p>Petit plugin <a href="https://addons.mozilla.org/fr/firefox/addon/tampermonkey/">TemperMonkey</a> permettant d'ajouter une horloge dans la barre de vidéos de Youtube</p>
+                        <p>Petit plugin <a href="https://addons.mozilla.org/fr/firefox/addon/tampermonkey/" target="_blank">TemperMonkey</a> permettant d'ajouter une horloge dans la barre de vidéos de Youtube</p>
                         <p>Cela permet de ne pas avoir à sortir du plein-écran pour lire l'heure.</p>
                     </div>
                     <div class="project-links">
-                        <a class="bouton" href="https://github.com/oxodao/youtubeclock">Github</a>
-                        <a class="bouton" href="https://greasyfork.org/fr/scripts/378136-youtubeclock">Téléchargement</a>
+                        <a class="bouton" href="https://github.com/oxodao/youtubeclock" target="_blank">Github</a>
+                        <a class="bouton" href="https://greasyfork.org/fr/scripts/378136-youtubeclock" target="_blank">Téléchargement</a>
                     </div>
                 </div>
             </article>
@@ -185,12 +217,12 @@
                 <div class="prj-col">
                     <div class="project-content">
                         <h1>Synthwave All the Things</h1>
-                        <p>Le thème <a href="https://github.com/robb0wen/synthwave-vscode" class="green">Synthwave de robb0wen</a> pour Visual Studio Code fait parti de mes préférés. Je m'en suis fortement inspiré pour créer ce site.</p>
+                        <p>Le thème <a href="https://github.com/robb0wen/synthwave-vscode" class="green" target="_blank">Synthwave de robb0wen</a> pour Visual Studio Code fait parti de mes préférés. Je m'en suis fortement inspiré pour créer ce site.</p>
                         <p>J'ai ensuite décidé de créer des thèmes Stylus pour divers sites web.</p>
-                        <p>Pour l'instant, <a href="https://news.ycombinator.com/" class="blue">HackerNews</a>, <a href="https://lobste.rs" class="blue">Lobste.rs</a> et bientot <a href="https://twitter.com" class="blue">Twitter</a>.</p>
+                        <p>Pour l'instant, <a href="https://news.ycombinator.com/" class="blue" target="_blank">HackerNews</a>, <a href="https://lobste.rs" class="blue" target="_blank">Lobste.rs</a> et bientôt <a href="https://twitter.com" class="blue" target="_blank">Twitter</a>.</p>
                     </div>
                     <div class="project-links">
-                        <a class="bouton" href="https://github.com/oxodao/synthwave-themed-sites">Github</a>
+                        <a class="bouton" href="https://github.com/oxodao/synthwave-themed-sites" target="_blank">Github</a>
                     </div>
                 </div>
             </article>
@@ -202,29 +234,12 @@
                         <p>Un petit stand à Zippo à imprimer en 3D pour pouvoir exposer sa collection</p>
                     </div>
                     <div class="project-links">
-                        <a class="bouton" href="https://www.thingiverse.com/thing:3832165">Thingiverse</a>
+                        <a class="bouton" href="https://www.thingiverse.com/thing:3832165" target="_blank">Thingiverse</a>
                     </div>
                 </div>
             </article>
         </div>
 
-        <div id="drx">
-            <h1>Dreeks</h1>
-            <p>Ci-dessous vous retrouverez les projets développés par l'équipe <a href="https://dreeks.xyz">Dreeks</a>, composée de mon ami <a href="https://cylgom.net">cylgom</a> et moi-même.</p>
-            <article>
-                <div class="img"><img src="img/projects/wa/banner.png" /></div>
-                <div class="prj-col">
-                    <div class="project-content">
-                        <h1>WeirdAdditions</h1>
-                        <p>Mod pour le jeu Minecraft ajoutant notamment des graines de vaches et des biberons.</p>
-                    </div>
-                    <div class="project-links">
-                        <a class="bouton" href="https://github.com/dreeks/WeirdAdditions">Github</a>
-                        <a class="bouton" href="https://github.com/dreeks/WeirdAdditions/releases">Téléchargement</a>
-                    </div>
-                </div>
-            </article>
-        </div>
     </section>
 
 
